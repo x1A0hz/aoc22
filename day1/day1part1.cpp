@@ -1,9 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <iostream>
-#include <fstream>
-#include <string>
 #include <cstdlib>
 using namespace std;
 
@@ -11,7 +8,7 @@ using namespace std;
 int main() {
   // Create a variable to store the total calories for 1 elf
   int totalfor1elf;
-  // Create a variable to store the most calories of an elve 
+  // Create a variable to store the most calories of an elf 
   int mostCal;
   // Create a text string, which is used to output the text file
   string calories;
@@ -20,7 +17,7 @@ int main() {
   ifstream file("caloriesinput.txt");
   // Use a while loop together with the getline() function to read the file line by line
   while (getline (file, calories)) {
-    string eachtotal[] = {to_string(totalfor1elf)};
+    string eachtotal[] = {to_string(totalfor1elf)}; //Create an array storing the total calories of each elf
     if (stoi(eachtotal[0]) > mostCal) {
     mostCal = stoi(eachtotal[0]) ; 
     }
@@ -34,7 +31,7 @@ int main() {
   }  
   
   cout << mostCal << endl;
-  
+  return 0;
   
   // Close the file
   file.close();
