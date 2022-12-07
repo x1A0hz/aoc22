@@ -8,7 +8,7 @@ using namespace std;
 int main() {
   // Create a variable to store the total calories for 1 elf
   int totalfor1elf;
-  // Create a variable to store integer calories (each line) 
+  // Create a variable to store the most calories of an elf 
   int mostCal;
   // Create a text string, which is used to output the text file
   string calories;
